@@ -1,5 +1,5 @@
-mod dsa;
 mod commands;
+mod dsa;
 mod request_handler;
 
 use std::process::Command;
@@ -7,9 +7,8 @@ use std::sync::{Arc, Mutex};
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 use tokio::net::TcpListener;
 
-use dsa::closed_char_tree::{CarType, ClosedTree, Vehicle};
 use commands::{common, handler};
-
+use dsa::closed_char_tree::{CarType, ClosedTree, Vehicle};
 
 #[tokio::main]
 async fn main() -> tokio::io::Result<()> {

@@ -7,5 +7,4 @@ pub mod common {
         Delete,
         Nop,
     }
-    
 }

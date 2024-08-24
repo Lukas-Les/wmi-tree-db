@@ -1,7 +1,4 @@
-[package]
-name = "wmi-tree-db"
-version = "0.1.0"
-edition = "2021"
+[workspace]
 
-[dependencies]
-tokio = { version = "1.39.3", features = ["full"] }
+
+members = [ "client","db-daemon"]

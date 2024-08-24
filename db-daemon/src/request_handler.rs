@@ -1,9 +1,8 @@
 use std::sync::{Arc, Mutex};
 
-use crate::commands::handler;
 use crate::commands::common;
-use crate::dsa::closed_char_tree::{ClosedTree, Vehicle, CarType};
-
+use crate::commands::handler;
+use crate::dsa::closed_char_tree::{CarType, ClosedTree, Vehicle};
 
 pub async fn handle_request(tree: &Arc<Mutex<ClosedTree>>, request: &str) -> String {
     println!("request: {}", request);
